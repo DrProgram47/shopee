@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Document</title>
+    <style>
+        .divpractice {
+            width: 750px;
+            height: 700px;
+            background-color: rebeccapurple;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            margin: 0px auto 0px auto;
+        }
+
+        .divpractice > .first {
+            width: 40%;
+            height: 350px;
+            background-color: aqua;
+        }
+
+        .divpractice > .second {
+            width: 80%;
+            height: 350px;
+            background-color: yellowgreen;
+
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .divpractice > .second > button{
+            margin-right: 5px;
+            padding: 10px;
+        }
+    </style>
+
+    <script>
+        function hey(){
+            alert('hello');
+        };
+    </script>
+</head>
+<body>
+    <div class="divpractice">
+        <input type="text" id="input-box">
+        <div class="first">div perteama</div>
+        <div class="second" id="second-box">
+            <button onclick= "hey()">first button</button>
+            <button>second button</button>
+            <button>thrid button</button>
+        </div>
+    </div>
+</body>
+</html>
